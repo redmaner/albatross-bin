@@ -1,0 +1,14 @@
+[Unit]
+Description=Nimiq albatross
+After=network.target
+
+[Service]
+Type=simple
+User=nimiq
+Restart=always
+RestartSec=5s
+ExecStart=/home/nimiq/nimiq-client /home/nimiq/client.toml
+
+# Other Restart options: or always, on-abort, etc
+[Install]
+WantedBy=multi-user.target
