@@ -8,7 +8,7 @@ fi
 
 if [ $(id $user | grep "uid" | wc -l) -eq 0 ]; then 
     echo "user does not exist"
-    useradd -m /home/nimiq -s /sbin/nologin nimiq
+    useradd -m -d /home/nimiq -s /sbin/nologin nimiq
 fi
 
 cp ./bin/nimiq-client /home/nimiq/nimiq-client 
