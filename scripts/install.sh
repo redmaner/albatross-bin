@@ -2,7 +2,7 @@
 
 user=nimiq
 
-if [ ! -e /bin/nimiq-client ]; then 
+if [ ! -e ./bin/nimiq-client ]; then 
     echo "Binary not built. Please run make build first"
 fi
 
