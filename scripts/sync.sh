@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 tag=$1
-default_tag="v0.18.0"
+default_tag="v0.19.0"
 
 if [ "$tag" == "" ]; then 
     tag=$default_tag
